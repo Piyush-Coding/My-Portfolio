@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #bdaae9, white, #51c5a8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*************************** Header *************************/
+
+#first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0 32px;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#one {
+    display: flex;
+    align-items: center;
+    font-size: 1.45rem;
+}
+
+#two {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+    gap: 26px;
+}
+
+.second .txtlink {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+.second .txtlink:hover {
+    color: blueviolet;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Start */
+
+main {
+    padding: 130px 32px 40px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.my-abo,
+.my-skill {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.my-abo .my-about1 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.fa-address-card {
+    font-size: 30px;
+    color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #eefeff;
+}
+
+.my-about {
+    font-size: 2rem;
+}
+
+.my-info {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.logo .fa-book-open {
+    font-size: 30px;
+    color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+/* Domain */
+.logo .head {
+    font-size: 2rem;
+}
+
+.do-head {
+    padding: 10px 0 10px 24px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.do-li {
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+/* Technical Skills */
+.tech {
+    padding: 10px 0 10px 24px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.tech1 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+/* Soft Skills */
+
+.soft {
+    padding: 10px 0 10px 24px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.soft1 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+@media (max-width: 992px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    #first {
+        height: auto;
+        padding: 14px 16px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #one h2 {
+        font-size: 1.4rem;
+    }
+
+    #two {
+        gap: 16px;
+        font-size: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 130px 16px 24px;
+    }
+
+    .my-about,
+    .logo .head {
+        font-size: 1.7rem;
+    }
+
+    .do-head,
+    .tech,
+    .soft {
+        font-size: 1.15rem;
+        padding-left: 20px;
+    }
+
+    .do-li,
+    .tech1,
+    .soft1 {
+        font-size: 1rem;
+    }
+}

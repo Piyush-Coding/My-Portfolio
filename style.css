@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #bdaae9, white, #51c5a8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*************************** Header *************************/
+
+#first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0 32px;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#one {
+    display: flex;
+    align-items: center;
+    font-size: 1.45rem;
+}
+
+#two {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+    gap: 26px;
+}
+
+.second .txtlink {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+.second .txtlink:hover {
+    color: blueviolet;
+}
+
+/******************************* Main ka Container ****************************/
+
+main {
+    padding: 120px 24px 36px;
+}
+
+main .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* Container1 */
+
+main .container1 {
+    min-height: 860px;
+    width: min(420px, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+main .container1 .photo .my-photo {
+    border-radius: 50%;
+    height: clamp(160px, 20vw, 220px);
+}
+
+main .container1 .my-info span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container1 .my-info .span-first .my-name {
+    font-size: clamp(1.8rem, 3.1vw, 3rem);
+    text-align: center;
+}
+
+main .my-pro {
+    padding: 15px;
+    color: blueviolet;
+    font-size: clamp(1.1rem, 2.4vw, 2rem);
+    text-align: center;
+}
+
+.my-link .span-second {
+    margin: 20px;
+    display: flex;
+    gap: 14px;
+}
+
+.my-link .span-second a {
+    height: 56px;
+    width: 56px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.my-link .span-second a:hover {
+    transform: translateY(-2px);
+    background-color: #f1f1f1;
+}
+
+.my-link .fa-x-twitter,
+.my-link .fa-linkedin,
+.my-link .fa-github {
+    font-size: 30px;
+    color: black;
+}
+
+/* Container 2 */
+
+.container2 {
+    flex: 1;
+}
+
+.container2 .summary {
+    margin-top: 10px;
+}
+
+.container2 .summary .pro-summ {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.pro-summ .fa-address-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 35px;
+    color: blueviolet;
+    height: 60px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.fa-address-card {
+    padding-top: 10px;
+}
+
+.pro-head {
+    padding-top: 20px;
+    font-size: clamp(1.35rem, 2.2vw, 2.2rem);
+}
+
+.para1 {
+    padding-top: 40px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Download Button */
+
+.download-CV {
+    padding-top: 34px;
+}
+
+.download-CV .btn button {
+    background: linear-gradient(135deg, #8318ee, #33c1b8, #29b756);
+    height: 50px;
+    width: 190px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div .download-CV a::active .btn {
+    background: linear-gradient(135deg, #29b756, #33c1b8, #8318ee)
+}
+
+/* Education */
+
+.edu {
+    margin-top: 60px;
+}
+
+.pro-edu {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.fa-graduation-cap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 35px;
+    color: blueviolet;
+    height: 60px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    padding-top: 10px;
+}
+
+.edu-detail {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.box {
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding: 20px;
+    /* text-align: center; */
+    gap: 20px;
+}
+
+.edu2 {
+    display: flex;
+}
+
+.icon1 {
+    background-color: #eefeff;
+    height: 30px;
+    height: 50px;
+    width: 70px;
+}
+
+.head2 {
+    font-size: 25px;
+}
+
+.date {
+    padding-left: 86px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sch-name {
+    padding-left: 86px;
+    font-weight: bold;
+}
+
+/* Interest */
+
+.interest .pro-edu {
+    margin-top: 60px;
+}
+
+.fa-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 35px;
+    color: blueviolet;
+    height: 60px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #eefeff;
+    padding-top: 10px;
+}
+
+.inter-detail {
+    margin-top: 40px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.box1 {
+    border-radius: 30px;
+    background-color: #d2c3f7;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+    color: purple;
+    font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+    main .container {
+        flex-direction: column;
+    }
+
+    main .container1 {
+        min-height: auto;
+        width: 100%;
+    }
+
+    .container2 .summary {
+        margin-top: 0;
+    }
+
+    .inter-detail {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    #first {
+        padding: 0 16px;
+    }
+
+    #one {
+        font-size: 1.2rem;
+    }
+
+    #two {
+        gap: 14px;
+        font-size: 0.95rem;
+    }
+
+    main {
+        padding: 110px 14px 24px;
+    }
+
+    .container2 .summary .pro-summ,
+    .pro-edu {
+        gap: 14px;
+    }
+
+    .pro-summ .fa-address-card,
+    .fa-graduation-cap,
+    .fa-heart {
+        font-size: 24px;
+        height: 48px;
+        width: 58px;
+    }
+
+    .edu-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .date,
+    .sch-name {
+        padding-left: 0;
+    }
+
+    .inter-detail {
+        grid-template-columns: 1fr;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 520px) {
+    #first {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    #two {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding-top: 130px;
+    }
+}

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(135deg, #bdaae9, white, #51c5a8);
+}
+
+/*************************** Header *************************/
+
+#first {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+} 
+
+#one {
+    padding-left: 120px;
+    display: flex;
+    align-items: center;
+    margin-right: 750px;
+    font-size: x-large;
+}
+
+#two {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    gap: 70px;
+}
+
+.second #txtlink {
+    color: black;
+    text-decoration: none;
+}
+
+/* Main Section */
+
+.my-skill {
+    margin-left: 100px;
+    margin-top: 180px;
+}
+
+/* Skills */
+.logo {
+    display: flex;
+    gap: 30px;
+}
+
+.logo .fa-book-open {
+    padding-top: 20px;
+    font-size: 30px;
+    color:blueviolet;
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+/* Domain */
+.logo .head {
+    padding-top: 10px;
+    font-size: 45px;
+}
+
+.do-head {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.do-li {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* Technical Skills */
+.tech {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tech1 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* Soft Skills */
+
+.soft {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.soft1 {
+    font-size: 20px;
+    font-weight: lighter;
+}

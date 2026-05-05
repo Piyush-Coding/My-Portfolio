@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #bdaae9, white, #51c5a8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*************************** Header *************************/
+
+#first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0 32px;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#one {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#two {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 28px;
+}
+
+.second #txtlink,
+.second a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.second #txtlink:hover,
+.second a:hover {
+    color: blueviolet;
+}
+
+/* Main Section Start */
+
+main {
+    padding: 120px 20px 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+}
+
+.main-head {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.main-para {
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.info {
+    display: flex;
+    width: min(100%, 1050px);
+    background-color: whitesmoke;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* info-start */
+
+.info-start {
+    flex: 1 1 45%;
+    padding: 32px 24px;
+    background-color: #fff;
+}
+
+.head {
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    line-height: 1.35;
+    margin-bottom: 22px;
+}
+
+.info-detail {
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    row-gap: 14px;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.info-detail i {
+    color: blueviolet;
+    font-size: 1.1rem;
+}
+
+.info-email,
+.info-phone,
+.info-location {
+    font-size: 1rem;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+/* cont-form container */
+
+.cont-form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex: 1 1 55%;
+    padding: 24px;
+    background: linear-gradient(135deg, #bdaae9, white, #51c5a8);
+}
+
+#form1 {
+    width: 100%;
+}
+
+#form1 label {
+    display: inline-block;
+    margin: 8px 0 6px;
+    font-weight: 600;
+}
+
+#name,
+#phone,
+#feedback {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    font-size: 0.98rem;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+#feedback {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#name:focus,
+#phone:focus,
+#feedback:focus {
+    border-color: blueviolet;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.15);
+}
+
+.btn {
+    margin-top: 8px;
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #6d22b5;
+}
+
+@media (max-width: 1024px) {
+    .info {
+        width: min(100%, 920px);
+    }
+}
+
+@media (max-width: 840px) {
+    #first {
+        padding: 0 18px;
+    }
+
+    #one {
+        font-size: 1.25rem;
+    }
+
+    #two {
+        gap: 16px;
+        font-size: 1rem;
+    }
+
+    main {
+        padding-top: 110px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info-start {
+        padding: 24px 18px;
+    }
+
+    .cont-form {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 540px) {
+    #first {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    #two {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 125px 12px 20px;
+    }
+
+    .main-head {
+        font-size: 1.35rem;
+    }
+
+    .head {
+        font-size: 1.2rem;
+    }
+}
+
